@@ -1,0 +1,7 @@
+.scroll-container .flex::-webkit-scrollbar {
+    display: none;
+  }
+
+  html { 
+    scroll-behavior: smooth; 
+  }

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <nav>
+        <div class="flex justify-between p-5 items-center">
+            <h1 class="text-3xl font-bold" id="nextbutton">Nostra</h1>
+            <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" width="24" height="24" class="cursor-pointer md:hidden">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <div class="hidden md:flex gap-12 text-2xl font-medium">
+                <a href="./index.html">Home</a>
+                <a href="#">New Arrival</a>
+                <a href="#most-wanted">Most Wanted</a>
+                <a href="./collections.html">Collections</a>
+                <a href="./contactus.html">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class='flex flex-col gap-10 items-center justify-around text-white bg-black fixed z-10 top-0 transition-all duration-1000'
+        style="width:50%;height:100vh; right: -50%;" id="sidebar">
+        <h1 class="self-end mr-10 cursor-pointer" id="close-icon">X</h1>
+        <a href="./index.html">Home</a>
+        <a href="#">New Arrival</a>
+        <a href="#most-wanted">Most Wanted</a>
+        <a href="./collections.html">Collections</a>
+        <a href="#">Contact Us</a>
+    </div>
+
+    <div class="flex gap-10 md:flex md:gap-20">
+        <!-- Filter List -->
+        <div class="p-5">
+            <h1 class="text-xl font-bold mb-5 md:text-3xl">Occasion</h1>
+            <input class="Occasion" type="checkbox" value="summer" name="occasion" id="summer">&nbsp;<label for="summer"
+                class="text-lg md:text-3xl md:font-thin">Summer</label>
+            <br>
+            <input class="Occasion" type="checkbox" value="party" name="occasion" id="party">&nbsp;<label for="party"
+                class="text-lg md:text-3xl md:font-thin">Party</label>
+            <br>
+            <input class="Occasion" type="checkbox" value="beach" name="occasion" id="beach">&nbsp;<label for="beach"
+                class="text-lg md:text-3xl md:font-thin">Beach</label>
+            <br>
+            <h1 class="text-xl font-bold mb-5 mt-8 md:text-3xl">Colors</h1>
+            <input class="Colors" type="checkbox" value="red" name="colors" id="red">&nbsp;<label for="red"
+                class="text-lg md:text-3xl md:font-thin">Red</label>
+            <br>
+            <input class="Colors" type="checkbox" value="blue" name="colors" id="blue">&nbsp;<label for="blue"
+                class="text-lg md:text-3xl md:font-thin">Blue</label>
+            <br>
+            <input class="Colors" type="checkbox" value="white" name="colors" id="white">&nbsp;<label for="white"
+                class="text-lg md:text-3xl md:font-thin">White</label>
+            <br>
+            <input class="Colors" type="checkbox" value="green" name="colors" id="green">&nbsp;<label for="green"
+                class="text-lg md:text-3xl md:font-thin">Green</label>
+            <br>
+            <h1 class="text-xl font-bold mb-5 mt-8 md:text-3xl">Arrivals</h1>
+            <input class="" type="checkbox" value="new" name="colors" id="new">&nbsp;<label for="new"
+                class="text-lg md:text-3xl md:font-thin">New</label>
+            <br>
+            <input type="checkbox" value="old" name="colors" id="old">&nbsp;<label for="old"
+                class="text-lg md:text-3xl md:font-thin">Old</label>
+            <br>
+        </div>
+     
+        <!-- Collections -->
+        <div class="flex flex-col mt-5  border-l-4 border-black" id="products">
+            <div class="flex rounded-xl w-5/6 m-auto items-center border border-black ">
+                <input class="p-2 ml-1 rounded-xl border-0 w-full focus:outline-none">
+                <i class="fa-solid fa-magnifying-glass mr-3"></i>
+            </div>
+            <div class="flex flex-wrap gap-5 justify-center mt-14 min-h-screen" id="products_list">
+                <div class="flex gap-5 flex-col w-1/4 border border-black">
+                    <img class="" src="./Images/f1.jpg" alt="">
+                    <h1 class="font-bold text-xl md:text-2xl">Floral Summer Shirt</h1>
+                    <p class="text-xl">₹220</p>
+                </div>
+                <div class="flex gap-5 flex-col w-1/4 border border-black">
+                    <img class="" src="./Images/f2.jpg" alt="">
+                    <h1 class="font-bold text-xl md:text-2xl">Summer Green</h1>
+                    <p class="text-xl">₹260</p>
+                </div>
+                <div class="flex gap-5 flex-col w-1/4 border border-black">
+                    <img class="" src="./Images/f3.jpg" alt="">
+                    <h1 class="font-bold text-xl md:text-2xl">Party Floral Shirt
+                    </h1>
+                    <p class="text-xl">₹399</p>
+                </div>
+                <div class="flex gap-5 flex-col w-1/4 border border-black">
+                    <img class="w-full" src="./Images/f4.jpg" alt="">
+                    <h1 class="font-bold text-xl md:text-2xl">Floral Summer Shirt
+                    </h1>
+                    <p class="text-xl">₹399</p>
+                </div>
+                <div class="flex gap-5 flex-col w-1/4 border border-black">
+                    <img class="w-full" src="./Images/f5.jpg" alt="">
+                    <h1 class="font-bold text-xl md:text-2xl">Beach Shirt
+                    </h1>
+                    <p class="text-xl">₹579</p>
+                </div>
+                <div class="flex gap-5 flex-col w-1/4 border border-black">
+                    <img class="w-full" src="./Images/f6.jpg" alt="">
+                    <h1 class="font-bold text-xl md:text-2xl">Shirt Party Red
+                    </h1>
+                    <p class="text-xl">₹260</p>
+                </div>
+                <div class="flex gap-5 flex-col w-1/4 border border-black">
+                    <img class="w-full" src="./Images/f1.jpg" alt="">
+                    <h1 class="font-bold text-xl md:text-2xl">Party Floral Shirt
+                    </h1>
+                    <p class="text-xl">₹260</p>
+                </div>
+                <div class="flex gap-5 flex-col w-1/4 border border-black">
+                    <img class="w-full" src="./Images/f2.jpg" alt="">
+                    <h1 class="font-bold text-xl md:text-2xl">Shirt Party Red
+                    </h1>
+                    <p class="text-xl">₹260</p>
+                </div>
+                <div class="flex gap-5 flex-col w-1/4 border border-black">
+                    <img class="w-full" src="./Images/f3.jpg" alt="">
+                    <h1 class="font-bold text-xl md:text-2xl">Floral Summer Shirt
+                    </h1>
+                    <p class="text-xl">₹260</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+    <div class="flex flex-col text-center items-center mt-11 gap-3">
+        <h1 class="font-bold text-3xl">Join our News Letter</h1>
+        <p class="text-xl">Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+        <input class="border-4 border-black w-8/12 p-2">
+        <button class="text-white bg-black mt-3 rounded-xl" style="width: 130px;padding: 10px;">Shop
+            Now</button>
+    </div>
+
+    <!-- Footer -->
+    <div class="bg-black text-white flex flex-col gap-5 p-10 mt-10">
+        <h1 class="text-2xl font-bold">Nostra</h1>
+        <p>The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+        <p>@ 2023 Nostra.com</p>
+    </div>
+
+
+    <script src="collections.js"></script>
+</body>
+
+</html>
